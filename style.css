@@ -1,0 +1,105 @@
+:root {
+  --blue: #1e40af;
+  --light-blue: #3b82f6;
+  --grey: #f3f4f6;
+  --dark: #0f172a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: white;
+  color: var(--dark);
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: var(--blue);
+  font-size: 28px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--light-blue);
+}
+
+.hero {
+  background: linear-gradient(to right, #f3f4f6, #ffffff);
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 46px;
+  color: var(--blue);
+}
+
+.hero p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #475569;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 60px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: var(--grey);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h4 {
+  margin-top: 15px;
+}
+
+footer {
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
